@@ -1,64 +1,87 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up</title>
 </head>
-  <style>
-    div.container{
-      border: 1px solid #ccc;
-      width: 60%;
-      font-size: small;
-      padding: 0.3125rem;
-    }
+<style>
+  div.container {
+    border: 1px solid #ccc;
+    width: 60%;
+    font-size: small;
+    padding: 0.3125rem;
+  }
 
-    .button_03{
-      text-align: center;
+  .button_03 {
+    text-align: center;
 
-    }
+  }
 
-    .btn_03{
-      display: inline-block;
-    }
+  .btn_03 {
+    display: inline-block;
+  }
 
-    img{
-      width: 0.625rem;
-    }
+  img {
+    width: 0.625rem;
+  }
 
-    .button_01, .button_02{
-      background-color: white;
-      border: 1px solid #000000;
-      border-radius: 0.3125rem;
-    }
+  .button_01,
+  .button_02 {
+    background-color: white;
+    border: 1px solid #000000;
+    border-radius: 0.3125rem;
+  }
 
-    label{
-      display: inline-block;
-      width: 25%;
-      text-align: right;
-      margin-right: 0.625rem;
-    }
+  label {
+    display: inline-block;
+    width: 25%;
+    text-align: right;
+    margin-right: 0.625rem;
+  }
 
-    select{
-      width: 18rem;
-      height: 1.4rem;
-    }
+  .info {
+    width: 4.6rem;
+  }
 
-    input[type=tel]{
-      width: 4.9rem;
-    }
+  select {
+    width: 18rem;
+    height: 1.4rem;
+  }
 
-    input[type=radio]{
-      height: 0.6875rem;
-    }
+  input[type=tel] {
+    width: 4.9rem;
+    background-color: #ffff00;
+  }
 
-    .address_01{
-      width: 21rem;
-    }
-  </style>
+  input[type=radio] {
+    height: 0.6875rem;
+  }
+
+  .address_01 {
+    width: 21rem;
+  }
+
+  /* 화면상의 hr의 첫번째 요소 */
+  hr:nth-of-type(1) {
+    border: 2px solid #0000ff;
+  }
+
+  /* hr의 마지막 요소 */
+  hr:nth-last-of-type(1) {
+    border: 2px solid #0000ff;
+  }
+
+  /* inpute type password class */
+  .password_01 {
+    background-color: #ffff00;
+  }
+</style>
+
 <body>
   <!-- signup.html -->
-   <div class="container">
+  <div class="container">
     <h4>일반회원 가입신청</h4>
     <hr>
     <label for="member_id"><img src="체크박스.PNG" alt="checkbox">일반회원아이디</label>
@@ -69,7 +92,8 @@
     <input type="text" name="" id="memeber_name">
     <hr>
     <label for="password"><img src="체크박스.PNG" alt="checkbox">비밀번호</label>
-    <input type="password" name="" id="password">
+    <input type="password" class="password_01" name="" id="password">
+    <span>(8~20자의 영문대소문자, 숫자, 특수문자만 가능합니다.)</span>
     <hr>
     <label for="hint"><img src="체크박스.PNG" alt="">비밀번호힌트</label>
     <select name="" id="hint">
@@ -78,7 +102,9 @@
     </select>
     <hr>
     <label for="tel">전화번호</label>
-    <input type="tel" id="tel">-<input type="tel" id="tel">-<input type="tel" id="tel">
+    <input type="tel" id="tel">-
+    <input type="tel" id="tel">-
+    <input type="tel" id="tel">
     <hr>
     <label for="phone">핸드폰번호</label>
     <input type="number" id="phone">
@@ -87,8 +113,8 @@
     <input type="email" id="email" placeholder="ABC@def.com">
     <hr>
     <label for="team"><img src="체크박스.PNG" alt="checkbox">소속정보</label>
-    <label for="company"><input type="radio" name="team" id="company">일반기업</label>
-    <label for="gover"><input type="radio" name="team" id="gover">공공기관</label>
+    <label class="info" for="company"><input type="radio" name="team" id="company">일반기업</label>
+    <label class="info" for="gover"><input type="radio" name="team" id="gover">공공기관</label>
     <hr>
     <label for="team_name"><img src="체크박스.PNG" alt="checkbox">소속명</label>
     <input type="text" name="" id="team_name">
@@ -108,6 +134,9 @@
     <button class="button_02">인증서등록</button>
     <span>(공무원은 인증서 등록을 해 주시기 바랍니다.)</span>
     <hr>
+    <label for="intro">자기소개</label>
+    <textarea name="" id="intro" cols="80"></textarea>
+    <hr>
     <div class="button_03">
       <input type="submit" class="btn_03" value="가입신청">
       <input type="reset" class="btn_03" value="취소">
@@ -116,7 +145,8 @@
 
 
 
-   </div>
-  
+  </div>
+
 </body>
+
 </html>
