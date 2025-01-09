@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인 화면</title>
+</head>
+<style>
+
+</style>
+
+<body>
+  <form action="index.html" method="get">
+    <fieldset>
+      <legend>검색</legend>
+      <label>전화번호<input type="tel" name="tel" placeholder="010-0000-0000" required
+          pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}"></label>
+      <label>이름<input type="checkbox" name="search" value="name"></label>
+      <label>별명<input type="checkbox" name="search" value="nickname"></label>
+    </fieldset>
+    <fieldset>
+      <legend>성별</legend>
+      <label for="male"><input type="radio" name="gender" id="male" value="men"><!--label, input id 연결-->
+        남성
+      </label>
+      <label for="female"><input type="radio" name="gender" id="female" value="women">
+        여성
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>추가정보</legend>
+      <label for="birth">생년월일<input type="date" name="birth" id="birth"></label><br>
+      <label for="range">범위<input type="range" name="range" id="range" min="1" max="50" style="width: 50%;"></label>
+    </fieldset>
+    <fieldset>
+      <legend>
+        <div>
+          <label>아이디<input type="text" name="userId" placeholder="abcdedf"></label>
+        </div>
+      </legend>
+      <legend>
+        <div class="password_01">
+          <label>비밀번호<input type="password" name="userPw" placeholder="******"></label>
+        </div>
+      </legend>
+      <legend>
+        <label for="user_ID">이메일<input type="email" id="user_ID" placeholder="abc@abcd.com" required></label>
+      </legend>
+    </fieldset>
+    <fieldset>
+      <legend>버튼</legend>
+      <input type="submit" value="로그인">
+      <input type="reset" value="초기화">
+    </fieldset>
+  </form>
+
+</body>
+
+</html>
