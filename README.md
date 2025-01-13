@@ -8,11 +8,5 @@
   파일 순차 업로드
 </div>
 
-<ul>
-  <li>
-    0108
-  </li>
-  <li>
-    0112
-  </li>
-</ul>
+> [0108](https://github.com/KwonDongIk/Yedam_Java_Fullstack/tree/main/0108) <br>
+> [0112](https://github.com/KwonDongIk/Yedam_Java_Fullstack/tree/main/0112)
