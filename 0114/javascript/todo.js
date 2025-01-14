@@ -18,23 +18,23 @@
 // 모든 인원은 1개 이상은 받아야 함
 
 
-total = 10;
+// total = 10;
 
-let A_person = parseInt(Math.floor(Math.random() * 10) + 1);
-let B_person = parseInt(Math.floor(Math.random() * 10) + 1);
-let C_person = parseInt(Math.floor(Math.random() * 10) + 1);
+// let A_person = parseInt(Math.floor(Math.random() * 10) + 1);
+// let B_person = parseInt(Math.floor(Math.random() * 10) + 1);
+// let C_person = parseInt(Math.floor(Math.random() * 10) + 1);
 
 
-if (A_person >= 3 && B_person >=1 && C_person >=1){
-    total -= A_person;
-    console.log(`A는 ${A_person}개 받았고, ${total}개 남았습니다.`);
-    total -= B_person;
-    console.log(`B는 ${B_person}개 받았고, ${total}개 남았습니다.`);
-    total -= C_person;
-    console.log(`C는 ${C_person}개 받았고, ${total}개 남았습니다.`);
-} else {
-    console.log("조건에 맞지 않습니다.");
-}
+// if (A_person + B_person + C_person == total && A_person >= 3 && B_person >= 1 && C_person >= 1){
+//     total -= A_person;
+//     console.log(`A는 ${A_person}개 받았고, ${total}개 남았습니다.`);
+//     total -= B_person;
+//     console.log(`B는 ${B_person}개 받았고, ${total}개 남았습니다.`);
+//     total -= C_person;
+//     console.log(`C는 ${C_person}개 받았고, ${total}개 남았습니다.`);
+// } else {
+//     console.log("조건에 맞지 않습니다.");
+// }
 
 
 
@@ -47,4 +47,15 @@ if (A_person >= 3 && B_person >=1 && C_person >=1){
 
 // questioner question
 
-// 0-10 숫자 랜덤 2개 골라 짝수면 + 하나만 짝수면 - 둘다 짝수가아니면 *
+// 0-10 숫자 랜덤 2개 골라 짝수면 + 하나만 짝수면 - 둘다 짝수가아니면 * 
+
+let num1 = parseInt((Math.random() * 10) + 1);
+let num2 = parseInt((Math.random() * 10) + 1);
+
+if (num1 % 2 == 0 && num2 % 2 == 0) {
+    console.log(`${num1} + ${num2}의 값은 모두 짝수이다. ${num1 + num2}입니다.`);
+} else if (num1 % 2 == 0 || num2 % 2 == 0) {
+    console.log(`${num1} - ${num2}의 값은 하나만 짝수이다. ${num1 - num2}입니다.`);
+} else {
+    console.log(`${num1} * ${num2}의 값은 모두 짝수가 아니다. ${num1 * num2}입니다.`);
+}
