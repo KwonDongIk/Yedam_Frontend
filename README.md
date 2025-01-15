@@ -3,7 +3,7 @@
 </div>
 <hr>
 <div align = center>
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Sans+ KR&size=40&pause=1000&color=FFFFFF&width=500&height=100&lines=Yedam+%EA%B0%95%EC%9D%98+%EC%8B%A4%EC%8A%B5+%ED%8C%8C%EC%9D%BC+%EC%97%85%EB%A1%9C%EB%93%9C" alt="Typing SVG" /></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Sans+ KR&size=40&pause=1000&color=FFFFFF&width=550&height=100&lines=Yedam+%EA%B0%95%EC%9D%98+%EC%8B%A4%EC%8A%B5+%ED%8C%8C%EC%9D%BC+%EC%97%85%EB%A1%9C%EB%93%9C" alt="Typing SVG" /></a>
 </div>
 <div align = center>
   날짜별로 강의 실습 코드
