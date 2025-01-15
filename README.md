@@ -17,6 +17,9 @@
 <hr>
 
 > [0108](https://github.com/KwonDongIk/Yedam_Java_Fullstack/tree/main/0108) <br>
+>> * Form 형식에서는 label 태그를 사용해야함
+>> * 사용자가 어떤 정보를 입력해야하는지 인지하기 어려움
+>> * aira-label, title, placeholder가 있음
 >>
 > [0112](https://github.com/KwonDongIk/Yedam_Java_Fullstack/tree/main/0112) <br>
 >>
@@ -24,3 +27,6 @@
 >>
 > [0114](https://github.com/KwonDongIk/Yedam_Java_Fullstack/tree/main/0114) <br>
 >>
+> [0115](https://github.com/KwonDongIk/Yedam_Java_Fullstack/tree/main/0115) <br>
+>>
+> [0116](https://github.com/KwonDongIk/Yedam_Java_Fullstack/tree/main/0116) <br>
