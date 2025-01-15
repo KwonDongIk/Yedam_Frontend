@@ -103,10 +103,24 @@
       <option value="">어릴적 별명은?</option>
     </select>
     <hr>
-    <label for="tel">전화번호</label>
-    <input type="tel" id="tel">-
-    <input type="tel" id="tel">-
-    <input type="tel" id="tel">
+    <label>전화번호</label>
+    
+    <input type="tel" 
+           id="tele1" 
+           aria-label="전화번호 앞자리" 
+           maxlength="3" 
+           title="전화번호 앞자리">-
+    <input type="tel" 
+           id="tele2"
+           aria-label="전화번호 두번째자리"
+           maxlength="4"
+           title="전화번호 두번째자리">-
+    <input type="tel"
+           id="tele3"
+           aria-label="전화번호 마지막자리"
+           maxlength="3"
+           title="전화번호 마지막자리">
+    
     <hr>
     <label for="phone">핸드폰번호</label>
     <input type="number" id="phone">
@@ -125,11 +139,11 @@
     <input type="search" id="address_number">
     <button class="button_02">검색</button>
     <hr>
-    <label for="address">주소</label>
-    <input type="search" class="address_01" id="address">
+    <label for="address1">주소</label>
+    <input type="search" class="address_01" id="address1">
     <hr>
-    <label for="address">상세주소</label>
-    <input type="search" class="address_01" id="address">
+    <label for="address2">상세주소</label>
+    <input type="search" class="address_01" id="address2">
     <hr>
     <label for="dn_text">인증서 DN</label>
     <input type="search" id="dn_text">
