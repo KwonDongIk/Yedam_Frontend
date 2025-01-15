@@ -25,16 +25,16 @@
 // let C_person = parseInt(Math.floor(Math.random() * 10) + 1);
 
 
-// if (A_person + B_person + C_person == total && A_person >= 3 && B_person >= 1 && C_person >= 1){
-//     total -= A_person;
-//     console.log(`A는 ${A_person}개 받았고, ${total}개 남았습니다.`);
-//     total -= B_person;
-//     console.log(`B는 ${B_person}개 받았고, ${total}개 남았습니다.`);
-//     total -= C_person;
-//     console.log(`C는 ${C_person}개 받았고, ${total}개 남았습니다.`);
-// } else {
-//     console.log("조건에 맞지 않습니다.");
-// }
+if (A_person + B_person + C_person == total && A_person >= 3 && B_person >= 1 && C_person >= 1){
+    total -= A_person;
+    console.log(`A는 ${A_person}개 받았고, ${total}개 남았습니다.`);
+    total -= B_person;
+    console.log(`B는 ${B_person}개 받았고, ${total}개 남았습니다.`);
+    total -= C_person;
+    console.log(`C는 ${C_person}개 받았고, ${total}개 남았습니다.`);
+} else {
+    console.log("조건에 맞지 않습니다.");
+}
 
 
 
