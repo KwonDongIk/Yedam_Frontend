@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exe_1.html 작성</title>
+</head>
+<body>
+  이름 : <input type="text" name="friend" value="홍길동">
+  <button>친구추가</button>
+  <button name = "remove">친구삭제</button>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>이름</th>
+      </tr>
+    </thead>
+    <tbody id="list">
+
+    </tbody>
+  </table>
+
+  <script>
+    let btn = document.querySelector('button');
+    
+    btn.addEventListener('click', function(){
+      
+      let inputFiled = document.querySelector('input[name="friend"]');
+      let name = inputFiled.value;
+      
+      friendAry.push(name);
+      makeList();
+      inputFiled.value = '';
+      inputFiled.focus();
+
+      if(name === ''){
+        alert('이름을 입력하세요!');
+        inputFiled.value = '';
+        inputFiled.focus();
+        return;
+        makeList();
+      }
+
+      makeList();
+
+    });
+
+    let remove_btn = document.querySelector('button[name="remove"]');
+
+    remove_btn.addEventListener('click', function(){
+
+      let searchName = document.querySelector('input[name="friend"]').value;
+      let pos = friendAry.indexOf(searchName);
+      // friendAry.pop();
+
+      if (pos == -1){
+        alert('찾는 이름이 없습니다.');
+        return;
+      }
+
+      friendAry.splice(pos, 1);
+      makeList();
+
+    });
+
+    let friendAry = ['정명한', '김지수', '고영서', '이민영', '정은애']
+    let targetItem = document.querySelector('#list');
+
+
+    function makeList(){
+
+      let html = '';
+      friendAry.forEach(function(item, idx, ary){
+    
+        html += `<tr><td>${item}</td></tr>`;
+
+      });
+
+      targetItem.innerHTML = html;
+  }
+
+  makeList();
+
+  </script>
+  
+</body>
+</html>
