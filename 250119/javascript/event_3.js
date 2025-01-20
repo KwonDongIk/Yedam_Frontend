@@ -120,7 +120,7 @@ let holidayDays = holidays.filter(function (item, idx, ary){
   }
   return false;
 });
-console.log(holidayDays);
+console.log(holidayDays[0]);
 
 
 for (let i = 1; i <= lastDays; i++){

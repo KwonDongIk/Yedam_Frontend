@@ -1,0 +1,111 @@
+*{
+  box-sizing: border-box;
+  font-family: '맑은 고딕';
+}
+
+/* body 하위 전체 div container */
+#container{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.headerTitle{
+  text-align: center;
+}
+
+/* header > 네비게이션 바 */
+header > nav {
+  overflow: hidden;
+  background-color: black;
+  color: white;
+}
+
+/* 로그인 a 오른쪽 정렬 */
+.signinTag{
+  float: right;
+}
+
+
+/* 네비게이션 바 > 하위 a 태그 스타일 */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+/* 네비게이션 바에 마우스가 가면 색깔이 변함 */
+nav a:hover {
+  color: black;
+  background-color: pink;
+}
+
+aside#asideLeft{
+  float: left;
+  width: 200px;
+  height: 700px;
+  text-align: center;
+  background-color: #ccc;
+}
+
+section{
+  float: left;
+  text-align: center;
+  height: 700px;
+  width: 600px;
+}
+
+#formSignup > form{
+  width: 500px;
+  margin: 0 auto;
+  background-color: #ccc;
+}
+
+#formSignup > form > fieldset{
+  border: none;
+}
+
+#formSignup > form > fieldset > legend{
+  font-weight: bold;
+}
+
+#formSignup > form > fieldset > ul > li{
+  border-radius: 5px;
+  background-color: #ffffff80;
+  border: 1px solid white;
+  margin: 5px;
+  list-style-type: none;
+}
+
+#formSignup > form > fieldset > ul > li > label{
+  display: inline-block;
+  width: 130px;
+}
+
+#formSignup > form > fieldset > ul > li > input{
+  display: inline-block;
+  width: 250px;
+  padding: 3px;
+}
+
+#formSignup > form > fieldset > button{
+  width: 150px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ddd;
+  padding: 15px;
+}
+
+aside#asideRight{
+  float: left;
+  width: 200px;
+  height: 700px;
+  text-align: center;
+  background-color: #ccc;
+}
+
+footer{
+  text-align: center;
+  clear: both;
+  background-color: #747373;  
+}
+
