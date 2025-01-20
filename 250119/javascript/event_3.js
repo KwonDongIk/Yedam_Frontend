@@ -1,4 +1,4 @@
-let holidays = [{month: 1, days:[1, 2, 3]}, {month: 2, days: [5, 8, 12]}, {month: 3, days: [1, 10, 15]}];
+// let holidays = [{month: 1, days:[1, 2, 3]}, {month: 2, days: [5, 8, 12]}, {month: 3, days: [1, 10, 15]}];
 
 // holidays.forEach(function(item, idx, ary){
 
@@ -114,21 +114,24 @@ for (let i = 0; i < space; i++){
 
 let holidays = [{month: 1, days:[1, 2, 3]}, {month: 2, days: [5, 8, 12]}, {month: 3, days: [1, 10, 15]}];
 
-let currentMonthHolidays = holidays.find(item => item.month === month);
-let holidayDays = currentMonthHolidays ? currentMonthHolidays.days : [];
+let holidayDays = holidays.filter(function (item, idx, ary){
+  if (item.month == month){
+    return true;
+  }
+  return false;
+});
+console.log(holidayDays);
 
 
 for (let i = 1; i <= lastDays; i++){
 
-  let isHoliday = holidayDays.includes(i);
-
-  if ((i + space) % 7 == 0){
+  if (holidayDays.length > 0 && holidayDays[0].days.indexOf(i) != -1) {
+    html += `<td style="background-color: pink; color: white;">${i}</td>`;
+  } else if ((i + space) % 7 == 0){
     html += `<td style="background-color: blue; color: white;">${i}</td>`;
   } else if ((i + space) % 7 == 1) {
     html += `<td style="background-color: red; color: white;">${i}</td>`;
-  } else if (isHoliday){
-    html += `<td style="background-color: red; color: white;">${i}</td>`;
-  }{
+  } else {
 
   html += (`<td>${i}</td>`);
   
