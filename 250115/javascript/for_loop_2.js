@@ -8,13 +8,14 @@ for(let i = 1; i < 10; i ++){
   for(let j = 1; j < 10; j ++){
     if(j % 2 == 0){
     document.write(`<tr><td style='background-color: yellow;'>${i} * ${j} = ${i * j} <br></td></tr>`)
-    document.write('<tbody');
-    document.write('</table>');
     }
     else{
       document.write(`<tr><td>${i} * ${j} = ${i * j}<br></td></tr>`)
     }
   }
+
+  document.write('<tbody');
+  document.write('</table>');
 }
 
 
