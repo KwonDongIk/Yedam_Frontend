@@ -1,5 +1,5 @@
 <div align = center>
-  <img src="https://capsule-render.vercel.app/api?type=Venom&color=gradient&height=300&section=header&text=Yedam%20project&fontSize=100&animation=fadeIn&fontAlignY=38&desc=Yedam%20Fullstack%20class&descAlignY=60&descAlign=78"/>
+  <img src="https://capsule-render.vercel.app/api?type=Venom&color=gradient&height=300&section=header&text=Yedam%20project&fontSize=100&animation=fadeIn&fontAlignY=38&desc=Yedam%20Fullstack%20class&descAlignY=60&descAlign=76"/>
 </div>
 <hr>
 <div align = center>
@@ -32,3 +32,13 @@
 > [0116](https://github.com/KwonDongIk/Yedam_Java_Fullstack/tree/main/0116) <br>
 >>
 > [0117](https://github.com/KwonDongIk/Yedam_Java_Fullstack/tree/main/0117) <br>
+>>
+> [0119](https://github.com/KwonDongIk/Yedam_Java_Fullstack/tree/main/0119) <br>
+>>
+> [0120](https://github.com/KwonDongIk/Yedam_Java_Fullstack/tree/main/0120) <br>
+>>
+> [0121](https://github.com/KwonDongIk/Yedam_Java_Fullstack/tree/main/0121) <br>
+>>
+
+
+
