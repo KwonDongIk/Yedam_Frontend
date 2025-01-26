@@ -62,7 +62,7 @@
     
 - [0119](https://github.com/KwonDongIk/Yedam_Java_Fullstack/tree/main/0119) <br>
   - JavaScript
-    - holiday 추가
+    - Calander에 holiday 추가
     
 - [0120](https://github.com/KwonDongIk/Yedam_Java_Fullstack/tree/main/0120) <br>
   - 평가과제 시험
